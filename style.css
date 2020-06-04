@@ -1,0 +1,281 @@
+body{
+    padding:0;
+    margin: 0;
+    max-width: 100vw;
+    font-family: sarabun;
+    overflow-x: hidden;
+    
+}
+hr{
+    background-color: black;
+    width:100%;
+}
+
+.main{
+   
+}
+.m_left{
+    background-color:#e8e8e8;
+    height: 130vh;
+}
+.m_right{
+    width: 40vw;
+    height: 100vh;
+    display: grid;
+    margin-top:10%;
+    padding: 5% 5% 0% 5%;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 40% 30%;
+    height: 100vh;
+}
+.grid-item-main{
+    
+}
+.l_content{
+    width:35%;
+    height:90%;
+    margin-top:4%;
+    margin-left:50%;
+    display: flex;
+    flex-direction: column;
+    text-align: center; 
+}
+.l_content{
+}
+
+.l1{
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-end;
+    height: 8vh;
+    bottom: 10vh;
+}
+.l2{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    height: 8vh;
+    font-size:1.6em;
+}
+.l2 span{
+    width: 80%;
+    margin-left: 10%;
+}
+.l3 {
+    display: flex;
+    flex-direction: column;
+    height: 12vh;
+    justify-content: center;
+}
+.l3 img{
+  
+    margin-left:auto;
+    margin-right: auto;
+    width: 120px;
+    height: 110px;
+    border-radius: 50%;
+}
+.l4{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height:20vh;
+
+    
+}
+.l4_1{
+    font-size: 1.3em;
+    font-weight: bold;
+}
+.l4_2{
+    font-size: 0.7em;
+}
+.l5{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    height: 20vh;
+}
+.l5_A,.l5_B,.l5_C{
+    padding: 0% 0% 5% 0%;
+}
+.l5_1{
+    font-weight: bold;
+}
+.l5_1_1{
+    font-size: 0.8em;
+}
+.l6{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    height:20vh;
+}
+.l6_2 p{
+    padding: 0;
+    margin: 0;
+}
+.l_A{
+    height: 20vh;
+
+}
+.l_B{
+    height: 20vh;
+}
+.l_C{
+    height: 20vh;
+
+}
+
+.grid-container_l{
+    display: inline-grid;
+     grid-template-columns: 40% 60%;
+     padding: 10px;
+     height: 30vh;
+
+}
+.grid-item_l{
+    
+}
+.h_box{
+    display: block;
+    width: 100%;
+    font-size:1.5em;
+}
+.box1_l{
+    display: inline-grid;
+    grid-template-columns: 1fr 50%;
+    width: 100%;
+    font-weight: bolder;
+   
+}
+.box1_l_en{
+    display: inline-grid;
+    grid-template-columns: 40% 40%;
+    width: 100%;
+   
+}
+.box1_l span:nth-child(2){
+    padding:0 10% 0 0;
+    text-align: right;
+    font-weight: normal;
+    font-size: 0.8em;
+}
+.grid-container_l_en{
+    display: inline-grid;
+    grid-template-columns: auto auto;
+    width: 100%;
+}
+.chart{
+    width: 100%;
+    height:50%;
+    background-color: rgb(148, 145, 145);
+    margin-left:0;
+}
+.box1_l_s{
+    font-size: 1.1em;
+}
+.c1{
+    width: 70%;
+    height:100%;
+    background-color: darkblue;
+}
+.c2{
+    width: 60%;
+    height:100%;
+    background-color: darkblue;
+}
+.c3{
+    width: 40%;
+    height:100%;
+    background-color: darkblue;
+}
+.c4{
+    width: 100%;
+    height:100%;
+    background-color: darkblue;
+}
+.bottom{
+    display: block;
+    /* position:relative; */
+    width: 100vw;
+    height:2vh;
+    background-color: rgb(97, 97, 253);
+    margin-top: 10%;
+}
+.hrline{
+    width: 100%;
+}
+
+@media only screen and (max-width: 901px) {
+    .grid-container_l{
+        grid-template-columns: 40% 100%;
+    }
+    .l_content{
+        margin-left: 40%;
+    }
+    .h_box{
+        font-size: 1.2em;
+    }
+  }
+
+  @media only screen and (max-width: 780px) {
+    .l_content {
+        margin-left: 24%;
+        width: 60%;
+    }
+    .h_box{
+        font-size: 1em;
+    }
+    .grid-container_l{
+        height: 30vh;
+    }
+    .box1_l_en{
+        grid-template-columns: 53% 40%;
+    }
+    
+  }
+  @media only screen and (max-width: 593px) {
+    .l_content {
+        margin-left: 24%;
+        width: 60%;
+    }
+    .h_box{
+        font-size: 1em;
+    }
+    .grid-container_l{
+        grid-template-columns: 53% 85%;
+    }
+    .box1_l_s{
+        font-size: 0.9em;
+    }
+    .grid-container_l{
+        height: 28vh;
+    }
+   
+  }
+  @media only screen and (max-width: 485px) {
+      .grid-container {
+        grid-template-columns: 100%;
+}
+        .bottom{
+            margin-top: 30%;
+        }
+        .m_right{
+            width: 69vw;
+        }
+  }
+
+  @media only screen and (max-width: 485px) {
+    .bottom{
+        margin-top: 40%;
+    }
+  }
+  @media only screen and (max-width: 320px) {
+    .bottom{
+        margin-top: 60%;
+    }
+  }
