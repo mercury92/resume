@@ -8,31 +8,42 @@ body{
 }
 hr{
     background-color: black;
-    width:100%;
+    width:90%;
+    height:0%;
+    margin-left: 0;
+    margin-top:3%;
+}
+
+
+.m_left{
+    background-color:#e8e8e8;
+    height:auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.m_right{
+    height:auto;
+    display: grid;
+    padding: 0% 5% 0% 5%;
+    grid-template-rows:1% 5% 31% 2% 5%;
+    box-sizing: border-box;
+
+}
+.m_last{
+    align-self:flex-start;
 }
 
 .main{
-   
-}
-.m_left{
-    background-color:#e8e8e8;
-    height: 130vh;
-}
-.m_right{
-    width: 40vw;
-    height: 100vh;
     display: grid;
-    margin-top:10%;
-    padding: 5% 5% 0% 5%;
-}
-
-.grid-container{
-    display: grid;
-    grid-template-columns: 40% 30%;
-    height: 100vh;
+    grid-template-columns: 25% 45% 25%;
+    padding:2% 0 2%;
+    
 }
 .grid-item-main{
     
+}
+.grid-item{
 }
 .l_content{
     width:35%;
@@ -50,25 +61,20 @@ hr{
     display: flex;
     flex-direction: column;
     justify-content:flex-end;
-    height: 8vh;
-    bottom: 10vh;
 }
 .l2{
     display: flex;
     flex-direction: column;
-    justify-content:center;
-    height: 8vh;
+    justify-content:center; 
     font-size:1.6em;
+    padding:5% 0 10%;
 }
-.l2 span{
-    width: 80%;
-    margin-left: 10%;
-}
+
 .l3 {
     display: flex;
     flex-direction: column;
-    height: 12vh;
     justify-content: center;
+    padding:5% 0 10%;
 }
 .l3 img{
   
@@ -82,9 +88,7 @@ hr{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height:20vh;
-
-    
+    padding:5% 0 10%;  
 }
 .l4_1{
     font-size: 1.3em;
@@ -97,8 +101,9 @@ hr{
     display: flex;
     flex-direction: column;
     justify-content:center;
-    height: 20vh;
+    padding:5% 0 10%;
 }
+
 .l5_A,.l5_B,.l5_C{
     padding: 0% 0% 5% 0%;
 }
@@ -106,13 +111,14 @@ hr{
     font-weight: bold;
 }
 .l5_1_1{
-    font-size: 0.8em;
+    font-size: 0.8em;   
 }
 .l6{
     display: flex;
     flex-direction: column;
     justify-content:center;
-    height:20vh;
+    padding:5% 0 10%;
+}
 }
 .l6_2 p{
     padding: 0;
@@ -131,10 +137,9 @@ hr{
 }
 
 .grid-container_l{
-    display: inline-grid;
+    display: grid;
      grid-template-columns: 40% 60%;
-     padding: 10px;
-     height: 30vh;
+    
 
 }
 .grid-item_l{
@@ -143,7 +148,15 @@ hr{
 .h_box{
     display: block;
     width: 100%;
-    font-size:1.5em;
+    height: 10px;
+    font: size 0.4em!important;
+}
+.h_box_2{
+    display: block;
+    width: 100%;
+    height: 10px;
+    font: size 0.4em!important;
+    margin-top: 50%;
 }
 .box1_l{
     display: inline-grid;
@@ -168,6 +181,9 @@ hr{
     display: inline-grid;
     grid-template-columns: auto auto;
     width: 100%;
+}
+.h_box:nth-child(2){
+    margin-top: 50%;
 }
 .chart{
     width: 100%;
@@ -201,24 +217,37 @@ hr{
 .bottom{
     display: block;
     /* position:relative; */
-    width: 100vw;
+    width:100vw;
     height:2vh;
     background-color: rgb(97, 97, 253);
-    margin-top: 10%;
+    position: relative;
 }
-.hrline{
-    width: 100%;
+
+@media only screen and (max-width: 1195px) {
+    .l_content{
+        margin-left: 40%;
+    }
 }
 
 @media only screen and (max-width: 901px) {
     .grid-container_l{
-        grid-template-columns: 40% 100%;
+        grid-template-columns: 40% 60%;
     }
     .l_content{
         margin-left: 40%;
     }
     .h_box{
         font-size: 1.2em;
+    }
+    .main{
+        grid-template-columns: 30% 70% 0%;
+    }
+    .m_last{
+        grid-column: 1/span 2;
+        margin-left: 10%;
+    }
+    .h_box_2{
+        margin-top:10%;
     }
   }
 
@@ -236,6 +265,10 @@ hr{
     .box1_l_en{
         grid-template-columns: 53% 40%;
     }
+    .m_last{
+        margin-left:3%;
+    }
+
     
   }
   @media only screen and (max-width: 593px) {
@@ -255,17 +288,31 @@ hr{
     .grid-container_l{
         height: 28vh;
     }
+    .main{
+        grid-template-columns: 100%;
+    }
+    .m_right{
+        grid-column: 1/span 2;
+    }
+    .m_last{
+        grid-column: 1/span 2;
+    }
    
   }
-  @media only screen and (max-width: 485px) {
-      .grid-container {
+  @media only screen and (max-width: 567px) {
+      .main {
         grid-template-columns: 100%;
-}
+      }
+      .m_left{
+        width: 100%;
+      }
         .bottom{
             margin-top: 30%;
         }
         .m_right{
             width: 69vw;
+            grid-template-rows:2% 9% 43% 4% 4%;
+            height: 100vh;
         }
   }
 
@@ -277,5 +324,10 @@ hr{
   @media only screen and (max-width: 320px) {
     .bottom{
         margin-top: 60%;
+    }
+  }
+  @media only screen and (max-width: 291px) {
+    .m_left{
+       width: 291px;
     }
   }
