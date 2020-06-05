@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    
 </head>
 
 <body>
@@ -123,13 +125,13 @@
         </div>
         <div class="m_last grid-item">
             
-            <div class="h_box">SKILLS</div>
+            <div class="h_box" onmouseover="skillin()" onmouseout= "skillOut()">SKILLS</div>
             <hr>
             <div class="l_D grid-container_l_en">
                 <div class="grid-item_l">
                     <div class="box1_l_en">A
-                        <div class="chart">
-                            <div class="c1"></div>
+                           <div class="chart">
+                            <div class="c1" id="c1"></div>
                         </div>
                     </div>
                 </div>
@@ -200,6 +202,15 @@
             </div>
         </div>
     </div>
+    <div class="butt">
+    <button class="darkbtn">Mode</button>
+    <button class="addE">Add Elem</button>
+    <button class="delE">Delete Elem</button>
+    <input type="text" id="mytext">
+    <button id="addT" onclick="addT()">add</button>
+    <p id="demo"> </p>
+    </div>
 </body>
 
 </html>
+<script src="script.js"></script>

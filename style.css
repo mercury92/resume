@@ -4,6 +4,7 @@ body{
     max-width: 100vw;
     font-family: sarabun;
     overflow-x: hidden;
+    transition: all ease-in 1s;
     
 }
 hr{
@@ -21,6 +22,7 @@ hr{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    transition: all ease-in 1s;
 }
 .m_right{
     height:auto;
@@ -119,7 +121,7 @@ hr{
     justify-content:center;
     padding:5% 0 10%;
 }
-}
+
 .l6_2 p{
     padding: 0;
     margin: 0;
@@ -150,6 +152,13 @@ hr{
     width: 100%;
     height: 10px;
     font: size 0.4em!important;
+    cursor: pointer;
+}
+.h_box:hover{
+    color: cadetblue;
+    font-weight: bolder;
+    transform: scale(1.05);
+    transition: all 0.1s linear;
 }
 .h_box_2{
     display: block;
@@ -197,23 +206,27 @@ hr{
 .box1_l_s{
     font-size: 1.1em;
 }
+.c1,.c2,.c3,.c4,.c5{
+    transition: all 1s ease-in-out;
+}
 .c1{
-    width: 70%;
+    width: 0%;
     height:100%;
     background-color: darkblue;
+   
 }
 .c2{
-    width: 60%;
+    width: 0%;
     height:100%;
     background-color: darkblue;
 }
 .c3{
-    width: 40%;
+    width: 0%;
     height:100%;
     background-color: darkblue;
 }
 .c4{
-    width: 100%;
+    width: 0%;
     height:100%;
     background-color: darkblue;
 }
@@ -333,4 +346,52 @@ hr{
     .m_left{
        width: 291px;
     }
+  }
+
+  .butt{
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      right: 0;
+      bottom: 10%;
+      width:10%;
+      margin: 2% 2% 2% 2%;
+        
+  }
+  .darkbtn {     
+      background-color: grey;
+      cursor: pointer;
+      margin:5%;
+  }
+  .dayM {
+    content: "dddd";
+  }
+
+  .allblack{
+      color: white;
+      background-color: black;
+  }
+  .addE{
+     background-color: rgb(202, 202, 202);
+     cursor: pointer;
+     margin:5%;
+     width: 100%;
+     border-radius: 10%;
+  }
+  .delE{
+    background-color: rgb(202, 202, 202);
+    cursor: pointer;
+    margin:5%;
+    width: 100%;
+    border-radius: 10%;
+  }
+  #addT{
+    width:40%;
+    margin: 2% 0;
+  }
+  #new{
+    display: inline;
+    position: absolute;
+    right: 20%;
+    bottom: 9%;
   }
