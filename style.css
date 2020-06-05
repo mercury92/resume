@@ -158,6 +158,9 @@ hr{
     font: size 0.4em!important;
     margin-top: 50%;
 }
+.bt{
+    margin-bottom: 10%;
+}
 .box1_l{
     display: inline-grid;
     grid-template-columns: 1fr 50%;
