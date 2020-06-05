@@ -37,7 +37,7 @@ hr{
 .main{
     display: grid;
     grid-template-columns: 25% 45% 25%;
-    padding:2% 0 2%;
+    padding:2% 0 0%;
     
 }
 .grid-item-main{
